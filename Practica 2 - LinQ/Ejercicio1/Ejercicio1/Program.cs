@@ -23,9 +23,12 @@ namespace LinQ
               new Persona { Nombre = "Ana", Edad = 27, Ciudad = "Cordoba" },
 
         };
-
+            //i)
+            
             var consulta1 = from p in personas where p.Edad > 30 && p.Ciudad == "Bogota" select new { p.Nombre };
-
+            
+            //ii) 
+            
             var consulta2 = from p in personas
                             where p.Edad > 25 && p.Edad < 35
                             orderby p.Edad ascending
